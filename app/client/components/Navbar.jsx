@@ -6,12 +6,12 @@ import { Button, Grid, Menu, Space, theme } from "antd";
 
 import { MenuOutlined } from "@ant-design/icons";
 
-import Logo from "../public/icon.svg"; // You can find the code for the Logo here: https://www.antblocksui.com/blocks/navbars
+// import Logo from "../public/icon.svg"; // You can find the code for the Logo here: https://www.antblocksui.com/blocks/navbars
 
 const { useToken } = theme;
 const { useBreakpoint } = Grid;
 
-export default function App() {
+export default function Navbar() {
   const { token } = useToken();
   const screens = useBreakpoint();
 
@@ -92,7 +92,7 @@ export default function App() {
       <div style={styles.container}>
         <div style={styles.menuContainer}>
           <a style={styles.logo} href="">
-          <img src={Logo} />
+          {/* <img src={Logo} /> */}
           </a>
           <Menu
             style={styles.menu}
